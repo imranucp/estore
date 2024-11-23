@@ -1,0 +1,15 @@
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    color: brown;
+    font-size: larger;
+}
+h1{
+    background-color: chocolate;
+    color: black;
+    font-weight: bolder;
+}
