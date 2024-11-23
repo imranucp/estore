@@ -1,14 +1,16 @@
+.abc{
+    height: 300;
+    width: 100%;
+display: flex;
+justify-content: space-around;
 
-.img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 a{
     color: brown;
     font-size: larger;
 }
 h1{
+    text-align: center;
     background-color: chocolate;
     color: black;
     font-weight: bolder;
