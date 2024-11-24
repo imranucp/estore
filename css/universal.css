@@ -31,3 +31,16 @@ header nav ul li a {
 header nav ul li a:hover {
     text-decoration: underline;
 }
+
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-content p {
+    font-size: 1rem;
+}
