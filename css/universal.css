@@ -44,3 +44,38 @@ footer {
 footer .footer-content p {
     font-size: 1rem;
 }
+
+
+
+/* Hero Section for index Page */
+.hero {
+    background: linear-gradient(to left, #007BFF, #00D4FF);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .cta-button {
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta-button:hover {
+    background-color: #E64A19;
+}
