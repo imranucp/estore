@@ -44,7 +44,7 @@ footer .footer-content p {
     font-size: 1rem;
 }
 
-/* Hero Section for index Page */
+/* Hero Section for Index Page */
 .hero {
     background: linear-gradient(to left, #007BFF, #00D4FF);
     color: white;
@@ -164,4 +164,117 @@ body {
 
 .buy-button:hover {
     background-color: #4cae4c;
+}
+
+/* Filters Section */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.filter-group label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.filter-group select, .filter-group input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    transition: all 0.3s ease;
+}
+
+.filter-group select:hover, .filter-group input:hover {
+    border-color: #4CAF50;
+}
+
+.reset-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.product-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem;
+    color: #333;
+}
+
+.product-price {
+    font-size: 1rem;
+    color: #4CAF50;
+    margin: 0 1rem 1rem;
+}
+
+.details-button {
+    display: block;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+    background-color: #388E3C;
 }
