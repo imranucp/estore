@@ -1,0 +1,127 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+
+    color: #b0c43f; 
+    padding-top: 80px; /* For fixed header */
+}
+
+/* Header */
+.header {
+    background-color: #343a40;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #17a2b8;
+}
+
+/* Main Section */
+.main {
+    padding: 20px;
+}
+
+.main h2 {
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.contact-form {
+    margin-top: 20px;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form .btn {
+    display: inline-block;
+    background: #17a2b8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.contact-form .btn:hover {
+    background: #138496;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+<<<<<<< HEAD
+}
+=======
+<<<<<<< HEAD
+}
+=======
+<<<<<<< HEAD
+}
+=======
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 83f4690d693429bc6d06100fa59ce174057f4cea
+>>>>>>> daa6d52fb5660b70f538872b90421bdcb91268fd
+>>>>>>> b5a576a338c1f2848053c29ea67f7b09bd6630ca
+>>>>>>> d4e3fcf802d3aa5a336a4200496bfe8c9f9c19f2
