@@ -44,7 +44,7 @@ footer .footer-content p {
     font-size: 1rem;
 }
 
-/* Hero Section for index Page */
+/* Hero Section for Index Page */
 .hero {
     background: linear-gradient(to left, #007BFF, #00D4FF);
     color: white;
@@ -166,83 +166,237 @@ body {
     background-color: #4cae4c;
 }
 
+/* Filters Section */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.filter-group label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.filter-group select, .filter-group input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    transition: all 0.3s ease;
+}
+
+.filter-group select:hover, .filter-group input:hover {
+    border-color: #4CAF50;
+}
+
+.reset-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.product-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem;
+    color: #333;
+}
+
+.product-price {
+    font-size: 1rem;
+    color: #4CAF50;
+    margin: 0 1rem 1rem;
+}
+
+.details-button {
+    display: block;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+    background-color: #388E3C;
+}
 
 
+/* Scoped CSS for Promotions Page */
+.promotions-page {
+    background-color: #f9f9f9;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
 
-
-
-
-/* Ali shah promotion page */
+/* Hero Section */
 .hero-promotion {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background: linear-gradient(to right, #4CAF50, #81C784);
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
 }
 
 .hero-promotion h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hero-promotion p {
     font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 /* Promotions Section */
 .promotions {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    background: #f8f9fa;
+    padding: 20px;
 }
 
 .promotion-item {
     background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-    padding: 20px;
-    width: 250px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .promotion-item:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .promotion-item img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 5px;
-    margin-bottom: 15px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
 }
 
 .promotion-item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin: 15px 20px;
+    color: #333;
 }
 
 .promotion-item p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #555;
-    margin-bottom: 15px;
+    margin: 0 20px 20px;
 }
 
 .promotion-item button {
-    background-color: #2575fc;
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 20px 20px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #4CAF50;
     color: white;
     border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    font-size: 1rem;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .promotion-item button:hover {
-    background-color: #6a11cb;
+    background-color: #388E3C;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-promotion h1 {
+        font-size: 2rem;
+    }
+
+    .hero-promotion p {
+        font-size: 1rem;
+    }
+
+    .promotion-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .promotion-item p {
+        font-size: 1rem;
+    }
+
+    .promotion-item button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
 }
