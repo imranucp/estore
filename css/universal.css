@@ -1,0 +1,19 @@
+#promotions {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.promotion {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.promotion h2 {
+    color: #007bff;
+}
+
+.promotion p {
+    color: #555;
+}
