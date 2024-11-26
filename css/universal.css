@@ -32,7 +32,6 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-
 /* Footer Section */
 footer {
     background-color: #333;
@@ -44,8 +43,6 @@ footer {
 footer .footer-content p {
     font-size: 1rem;
 }
-
-
 
 /* Hero Section for index Page */
 .hero {
@@ -78,4 +75,93 @@ footer .footer-content p {
 
 .hero .cta-button:hover {
     background-color: #E64A19;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Section */
+.product-header {
+    text-align: center;
+}
+
+.product-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.product-header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.product-gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.product-details {
+    margin-top: 20px;
+}
+
+.product-details h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.product-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-details li {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.8em;
+    color: #d9534f;
+    margin-top: 20px;
+}
+
+.buy-button {
+    display: inline-block;
+    background-color: #5cb85c;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #4cae4c;
 }
