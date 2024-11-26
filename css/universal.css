@@ -278,3 +278,125 @@ body {
 .details-button:hover {
     background-color: #388E3C;
 }
+
+
+/* Scoped CSS for Promotions Page */
+.promotions-page {
+    background-color: #f9f9f9;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero-promotion {
+    background: linear-gradient(to right, #4CAF50, #81C784);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.hero-promotion h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-promotion p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Promotions Section */
+.promotions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.promotion-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promotion-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.promotion-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.promotion-item h3 {
+    font-size: 1.5rem;
+    margin: 15px 20px;
+    color: #333;
+}
+
+.promotion-item p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0 20px 20px;
+}
+
+.promotion-item button {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 20px 20px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.promotion-item button:hover {
+    background-color: #388E3C;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-promotion h1 {
+        font-size: 2rem;
+    }
+
+    .hero-promotion p {
+        font-size: 1rem;
+    }
+
+    .promotion-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .promotion-item p {
+        font-size: 1rem;
+    }
+
+    .promotion-item button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
