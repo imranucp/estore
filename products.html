@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Product Page</title>
+    <link rel="stylesheet" href="./css/universal.css">
+</head>
+<body>
+     <!-- Header -->
+     <header>
+        <div class="logo">
+            <h1>Mobile Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="promotions.html" class="active">Promotions</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="filters">
+        <div class="filter-group">
+            <label for="price-filter">Price Range</label>
+            <select id="price-filter">
+                <option value="all">All</option>
+                <option value="500">Under $500</option>
+                <option value="1000">Under $1000</option>
+                <option value="1500">Under $1500</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="company-filter">Company</label>
+            <select id="company-filter">
+                <option value="all">All</option>
+                <option value="apple">Apple</option>
+                <option value="samsung">Samsung</option>
+                <option value="xiaomi">Xiaomi</option>
+            </select>
+        </div>
+        <button class="reset-button" id="reset-filters">Reset Filters</button>
+    </div>
+    <div class="product-grid" id="product-grid">
+        <!-- Product cards will be rendered here -->
+    </div>
+    <script>
+        const products = [
+            { id: 1, name: 'iPhone 14', company: 'apple', price: 1200, image: './assests/images/14promax.jpeg' },
+            { id: 2, name: 'Galaxy S22', company: 'samsung', price: 900, image: './assests/images/Galaxy A53.jpeg' },
+            { id: 3, name: 'Redmi Note 11', company: 'xiaomi', price: 400, image: './assests/images/Redmi Note 11.jpeg' },
+            { id: 4, name: 'iPhone SE', company: 'apple', price: 500, image: './assests/images/iPhone SE.jpeg' },
+            { id: 5, name: 'Galaxy A53', company: 'samsung', price: 450, image: './assests/images/Galaxy A53.jpeg' },
+            { id: 6, name: 'iPhone 14', company: 'apple', price: 1200, image: './assests/images/14promax.jpeg' },
+            { id: 7, name: 'Galaxy S22', company: 'samsung', price: 900, image: './assests/images/Galaxy A53.jpeg' },
+            { id: 8, name: 'Redmi Note 11', company: 'xiaomi', price: 400, image: './assests/images/Redmi Note 11.jpeg' },
+            { id: 9, name: 'iPhone SE', company: 'apple', price: 500, image: './assests/images/iPhone SE.jpeg' },
+            { id: 10, name: 'Galaxy A53', company: 'samsung', price: 450, image: './assests/images/Galaxy A53.jpeg' }
+        ];
+
+        const productGrid = document.getElementById('product-grid');
+        const priceFilter = document.getElementById('price-filter');
+        const companyFilter = document.getElementById('company-filter');
+        const resetButton = document.getElementById('reset-filters');
+
+        function renderProducts(filteredProducts) {
+            productGrid.innerHTML = '';
+            filteredProducts.forEach(product => {
+                const productCard = `
+                    <div class="product-card">
+                        <img src="${product.image}" alt="${product.name}" class="product-image">
+                        <div class="product-name">${product.name}</div>
+                        <div class="product-price">$${product.price}</div>
+                        <a href="#" class="details-button">Details</a>
+                    </div>
+                `;
+                productGrid.innerHTML += productCard;
+            });
+        }
+
+        function filterProducts() {
+            const selectedPrice = parseInt(priceFilter.value) || Infinity;
+            const selectedCompany = companyFilter.value;
+
+            const filteredProducts = products.filter(product => {
+                const matchesPrice = selectedPrice === Infinity || product.price <= selectedPrice;
+                const matchesCompany = selectedCompany === 'all' || product.company === selectedCompany;
+                return matchesPrice && matchesCompany;
+            });
+
+            renderProducts(filteredProducts);
+        }
+
+        priceFilter.addEventListener('change', filterProducts);
+        companyFilter.addEventListener('change', filterProducts);
+        resetButton.addEventListener('click', () => {
+            priceFilter.value = 'all';
+            companyFilter.value = 'all';
+            renderProducts(products);
+        });
+
+        // Initial render
+        renderProducts(products);
+    </script>
+     <!-- Footer -->
+     <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Mobile Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
