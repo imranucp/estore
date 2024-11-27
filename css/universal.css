@@ -1,20 +1,12 @@
-<<<<<<< HEAD
-body{
-    background-color: beige;
-}
-h1{
-    text-align: center;
-    text-size-adjust: 50pd;
-    text-decoration: dashed;
-}
-=======
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: beige; /* Use one background color */
     color: #333;
 }
 
 h1 {
-    color: #4CAF50;
+    color: #ff0000;
+    text-align: center;
+    /* Use border or another property if you need dashed lines */
+    border-bottom: 2px dashed #ff0000;
 }
->>>>>>> df6fdc4ce87c7d97c0cb7feeb5301d04fe2fbaf9
