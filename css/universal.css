@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige; /* Use one background color */
+    color: #333;
+}
+
+h1 {
+    color: #ff0000;
+    text-align: center;
+    /* Use border or another property if you need dashed lines */
+    border-bottom: 2px dashed #ff0000;
+}
