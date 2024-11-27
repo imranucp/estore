@@ -49,7 +49,64 @@ body {
   .product-link:hover {
     background-color: #0056b3;
   }
-  
+  /* Styling for the Contact Us page using basil and myname */
+.basil {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#myname {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.basil-description {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.basil-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.basil-label {
+  font-size: 1em;
+  color: #333;
+  text-align: left;
+}
+
+.basil-input,
+.basil-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.basil-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.basil-button:hover {
+  background-color: #0056b3;
+}
+
   /* Promotion.css */
 .complet {
   margin: 0;
@@ -141,5 +198,6 @@ footer {
       flex-direction: column;
   }
 }
+
 
 
