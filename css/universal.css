@@ -4,6 +4,7 @@
 display: flex;
 justify-content: space-around;
 
+
 }
 a{
   color: brown;
@@ -25,9 +26,9 @@ h1{
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
   
-  .product-container {
+  
+  
     text-align: center;
     background: #fff;
     padding: 20px;
@@ -40,7 +41,6 @@ h1{
     height: 300px;
     width: 500px;
     border-radius: 10px;
-
   }
   
   .product-title {
@@ -67,6 +67,11 @@ h1{
   .product-link:hover {
     background-color: #0056b3;
   }
+
+  
+
+
+
   /* Styling for the Contact Us page using basil and myname */
 .basil {
   max-width: 600px;
