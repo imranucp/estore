@@ -4,8 +4,6 @@
 display: flex;
 justify-content: space-around;
 
-.product-container {
-
 }
 a{
   color: brown;
@@ -27,9 +25,9 @@ h1{
     justify-content: center;
     align-items: center;
     height: 100vh;
+  }
   
-  
-  
+  .product-container {
     text-align: center;
     background: #fff;
     padding: 20px;
@@ -42,6 +40,7 @@ h1{
     height: 300px;
     width: 500px;
     border-radius: 10px;
+
   }
   
   .product-title {
@@ -68,94 +67,6 @@ h1{
   .product-link:hover {
     background-color: #0056b3;
   }
-
-  
-
-
-  /* ProductsDetail.css */
-
-/* Styling for the product details page */
-.malaika.header {
-  background-color: #f4f4f4;
-  padding: 20px;
-  text-align: center;
-  font-size: 1.5em;
-  border-bottom: 1px solid #ddd;
-}
-
-.malaika.main-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-}
-
-.malaika.product-detail {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 70%;
-}
-
-.malaika.product-image {
-  width: 40%;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.malaika.product-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.malaika.product-title {
-  font-size: 1.8em;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.malaika.product-description {
-  font-size: 1em;
-  line-height: 1.5;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-.malaika.product-price {
-  font-size: 1.5em;
-  color: #27ae60;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.malaika.buy-button {
-  padding: 10px 20px;
-  font-size: 1em;
-  color: #fff;
-  background-color: #27ae60;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.malaika.buy-button:hover {
-  background-color: #219150;
-}
-
-.malaika.footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #f4f4f4;
-  border-top: 1px solid #ddd;
-}
-
   /* Styling for the Contact Us page using basil and myname */
 .basil {
   max-width: 600px;
