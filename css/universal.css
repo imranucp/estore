@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     background-color: beige;
 }
@@ -6,3 +7,14 @@ h1{
     text-size-adjust: 50pd;
     text-decoration: dashed;
 }
+=======
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: #4CAF50;
+}
+>>>>>>> df6fdc4ce87c7d97c0cb7feeb5301d04fe2fbaf9
