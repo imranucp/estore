@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProductPage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Simple eStore</title>
+  <link rel="stylesheet" href="universal.css">
 </head>
 <body>
-        
+
+  <header>
+    <div class="logo">
+      <h1>My eStore</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Cart (0)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-list">
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Product 1">
+        <h2>Product 1</h2>
+        <p class="price">$20.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Product 2">
+        <h2>Product 2</h2>
+        <p class="price">$30.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Product 3">
+        <h2>Product 3</h2>
+        <p class="price">$40.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 My Simple eStore</p>
+  </footer>
+
+  <script>
+    let cartCount = 0;
+    const cartLink = document.querySelector("nav ul li a[href='#']:nth-child(4)");
+
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        cartCount++;
+        cartLink.textContent = `Cart (${cartCount})`;
+      });
+    });
+  </script>
+
 </body>
 </html>
