@@ -1,3 +1,32 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
 /* General Reset */
 
 /* General Reset and Layout */
@@ -66,6 +95,20 @@ nav ul {
 
 nav ul li {
   display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main section styles */
   margin-right: 15px;
 }
 
@@ -89,6 +132,16 @@ main {
 }
 
 main section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+main section p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+/* Footer styles */
   font-size: 2rem;
   margin-bottom: 15px;
   color: #0078d7;
@@ -123,6 +176,36 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  footer {
+    position: relative;
+    bottom: auto;
+  }
+}
+
   margin-top: 20px;
   font-size: 0.9rem;
 }
