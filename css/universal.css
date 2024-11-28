@@ -1,0 +1,52 @@
+
+body   
+ {
+    background-color: rgb(165, 192, 201);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(239, 238, 220);
+}
+
+.container
+{
+    height: 414px;
+    width: 368px;
+    background-color: rgb(20, 21, 82);
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: rgba(41, 40, 40, 0.2);
+    gap: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.container_box
+ {
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.container:hover 
+{
+    transform: scale(1.1);
+}
+
+.cardutility 
+{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size:10px;
+}
