@@ -82,7 +82,7 @@ button:hover {
 .product-details img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 20px;
 }
 
