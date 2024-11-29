@@ -1,0 +1,10 @@
+/* changes by saif */
+h1 {
+  background-color: blue;
+  margin: 5%;
+}
+
+input {
+  width: fit-content;
+  border-radius: 5%;
+}
