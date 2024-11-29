@@ -4,30 +4,57 @@ body {
     padding: 0;
     background-color: #f4f4f9;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 15275cada75c9855a022d062fb2b9c9deb51d1eb
 header {
     background-color: #333;
     color: white;
     padding: 10px 20px;
     text-align: center;
 }
+<<<<<<< HEAD
+=======
+
+/* Styles for Product Page */
+>>>>>>> 15275cada75c9855a022d062fb2b9c9deb51d1eb
 .product {
     display: flex;
     align-items: center;
     margin: 20px;
     padding: 20px;
     background: #fff;
+<<<<<<< HEAD
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+=======
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+>>>>>>> 15275cada75c9855a022d062fb2b9c9deb51d1eb
 .product-image {
     width: 200px;
     margin-right: 20px;
 }
+<<<<<<< HEAD
 .product-info {
     max-width: 500px;
 }
 .product-info h2 {
     margin: 0 0 10px;
 }
+=======
+
+.product-info {
+    max-width: 500px;
+}
+
+.product-info h2 {
+    margin: 0 0 10px;
+}
+
+>>>>>>> 15275cada75c9855a022d062fb2b9c9deb51d1eb
 footer {
     text-align: center;
     padding: 10px;
@@ -35,3 +62,77 @@ footer {
     color: white;
     margin-top: 20px;
 }
+<<<<<<< HEAD
+=======
+
+/* Styles for Promotion Page */
+.promo-list {
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.promo-list .promo {
+    background-color: #F8F9FA;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.promo-list .promo h3 {
+    color: #007BFF;
+    margin-bottom: 0.5rem;
+}
+
+.promo-list .promo p {
+    color: #333;
+}
+
+.promo-list .promo:hover {
+    background-color: #E9ECEF;
+}
+
+/* Styles for Contact Us Page */
+.contact-form {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 1rem;
+    color: #007BFF;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 0.75rem 1.5rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+>>>>>>> 15275cada75c9855a022d062fb2b9c9deb51d1eb
