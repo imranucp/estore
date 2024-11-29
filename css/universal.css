@@ -1,6 +1,6 @@
 /* Universal Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Prefer 'Roboto' font for a modern look */
     margin: 0;
     padding: 0;
     background-color: #f0f8ff; /* Light blue background */
@@ -26,13 +26,14 @@ header p {
     margin-top: 10px;
 }
 
-/* Main Content */
+/* Main Content Container */
 .container {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
 }
 
+/* Product Section */
 .product, .main {
     display: flex;
     flex-wrap: wrap;
@@ -48,11 +49,43 @@ header p {
     border-radius: 8px;
 }
 
-.product-details, .contact-info {
+.product-details {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.product-details h1 {
+    font-size: 2em;
+    margin: 0 0 10px;
+}
+
+.product-details p {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.product-details .price {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-details button {
+    background: #1e90ff; /* Unified blue button style */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.product-details button:hover {
+    background: #4682b4; /* Hover color matches header */
 }
 
 /* Contact Info Section */
