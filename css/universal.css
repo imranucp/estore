@@ -1,0 +1,8 @@
+p {
+  margin: 2%;
+}
+div {
+  display: flex;
+  text-align: justify;
+  font-size: smaller;
+}
