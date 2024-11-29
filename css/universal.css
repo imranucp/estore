@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+h1{
+    text-align: center;
+    color: beige;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+p{
+    color:blue;
+    font-size: 20px;
+    text-align: center;
+}
