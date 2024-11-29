@@ -1,3 +1,14 @@
+
+/* changes by saif */
+h1 {
+  background-color: blue;
+  margin: 5%;
+}
+
+input {
+  width: fit-content;
+  border-radius: 5%;
+
 div {
 
   height: 50%;
@@ -17,5 +28,6 @@ h2 {
 }
 p {
   text-decoration: double;
+
 
 }
