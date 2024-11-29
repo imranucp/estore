@@ -1,4 +1,13 @@
 
+div {
+  display: flex;
+  text-align: justify;
+  font-size: smaller;
+  height:50%;
+  width: auto;
+  padding: 5%;
+
+
 /* changes by saif */
 h1 {
   background-color: blue;
@@ -9,13 +18,7 @@ input {
   width: fit-content;
   border-radius: 5%;
 
-div {
 
-  height: 50%;
-  width: auto;
-  display: flex;
-  padding: 5%;
-}
 
 h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -28,6 +31,8 @@ h2 {
 }
 p {
   text-decoration: double;
+  margin:2%;
+
 
 
 }
