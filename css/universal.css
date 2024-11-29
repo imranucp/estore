@@ -1,0 +1,17 @@
+body{
+    margin: 4;
+    padding: 20px;
+    background-color: rgb(1, 5, 4);
+}
+h1{
+    text-align: left;
+    color: rgb(80, 37, 29);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+p{
+    color:rgb(88, 12, 12);
+    font-size: 30px;
+    text-align: center;
+
+}
