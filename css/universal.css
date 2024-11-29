@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+h1 {
+    color: rgb(2, 12, 102);
+    text-align: center;
+    margin-top: 25px;
+}
+
+p {
+    color: blue;
+    font-size: 15px;
+    text-align: center;
+}
