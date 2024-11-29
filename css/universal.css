@@ -5,9 +5,13 @@ body {
     background-color: #f4f4f9;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 15275cada75c9855a022d062fb2b9c9deb51d1eb
+=======
+
+>>>>>>> a060f5a62ed5c0771ff25a6e0c7baf80bb46d451
 header {
     background-color: #333;
     color: white;
@@ -15,16 +19,22 @@ header {
     text-align: center;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 /* Styles for Product Page */
 >>>>>>> 15275cada75c9855a022d062fb2b9c9deb51d1eb
+=======
+
+/* Styles for Product Page */
+>>>>>>> a060f5a62ed5c0771ff25a6e0c7baf80bb46d451
 .product {
     display: flex;
     align-items: center;
     margin: 20px;
     padding: 20px;
     background: #fff;
+<<<<<<< HEAD
 <<<<<<< HEAD
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -33,17 +43,28 @@ header {
 }
 
 >>>>>>> 15275cada75c9855a022d062fb2b9c9deb51d1eb
+=======
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+>>>>>>> a060f5a62ed5c0771ff25a6e0c7baf80bb46d451
 .product-image {
     width: 200px;
     margin-right: 20px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> a060f5a62ed5c0771ff25a6e0c7baf80bb46d451
 .product-info {
     max-width: 500px;
 }
+
 .product-info h2 {
     margin: 0 0 10px;
 }
+<<<<<<< HEAD
 =======
 
 .product-info {
@@ -55,6 +76,9 @@ header {
 }
 
 >>>>>>> 15275cada75c9855a022d062fb2b9c9deb51d1eb
+=======
+
+>>>>>>> a060f5a62ed5c0771ff25a6e0c7baf80bb46d451
 footer {
     text-align: center;
     padding: 10px;
@@ -63,7 +87,10 @@ footer {
     margin-top: 20px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> a060f5a62ed5c0771ff25a6e0c7baf80bb46d451
 
 /* Styles for Promotion Page */
 .promo-list {
