@@ -1,0 +1,17 @@
+.abc{
+    height: 300;
+    width: 100%;
+display: flex;
+justify-content: space-around;
+
+}
+a{
+    color: brown;
+    font-size: larger;
+}
+h1{
+    text-align: center;
+    background-color: chocolate;
+    color: black;
+    font-weight: bolder;
+}
