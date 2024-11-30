@@ -1,0 +1,19 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 5;
+    padding: 5;
+    line-height: 2.8;
+    color: #338;
+  }
+  
+  .section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 3.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
