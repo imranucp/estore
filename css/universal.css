@@ -1,12 +1,20 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
+/* General Reset and Body Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f4;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for Product Grid */
 .container {
     max-width: 1200px;
     margin: 20px auto;
@@ -18,6 +26,7 @@ h1 {
     color: #333;
 }
 
+/* Product Grid Styles */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -68,4 +77,80 @@ h1 {
 
 .product button:hover {
     background-color: #00796b;
+}
+
+/* Login Container Styles */
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Login Form Styles */
+.login-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+/* Login Button Styles */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #357ab7;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container,
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .login-form h2 {
+        font-size: 20px;
+    }
 }
