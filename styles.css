@@ -1,0 +1,173 @@
+/*
+
+CSS RESET SHEET
+
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Emblema One", system-ui;
+}
+
+/*
+
+FONT CONFIGURATION
+
+*/
+
+@font-face {
+  font-family: "Emblema One";
+  src: url("./Fonts/EmblemaOne-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+
+HEADER CONFIGURATION
+
+*/
+
+.header {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: darkred;
+}
+.header i {
+  color: white;
+  font-size: 40px;
+}
+.header nav {
+  width: fit-content;
+  height: inherit;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background: transparent;
+}
+.header nav a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+.header *:not(i:first-of-type):hover {
+  color: black;
+}
+.header * {
+  cursor: pointer;
+}
+
+/*
+
+FOOTER CONFIGURATION
+
+*/
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background: rgb(41, 41, 41);
+  display: flex;
+}
+
+.footer .left-footer,
+.footer .right-footer {
+  width: 50%;
+  height: inherit;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.footer .left-footer dt a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+}
+.footer .left-footer dt a:hover {
+  color: red;
+}
+.footer .left-footer {
+  padding-inline-start: 10rem;
+}
+.footer .right-footer p {
+  width: 100%;
+  text-align: end;
+}
+
+.footer .right-footer {
+  padding-inline-end: 10rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    display: block;
+    gap: 1.2rem;
+    height: auto;
+    padding: 1rem;
+    text-align: start;
+  }
+  .header a i {
+    width: 100%;
+    text-align: end;
+  }
+  .header i {
+    text-align: start;
+  }
+
+  .header nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-block: 15px;
+    text-align: start;
+    display: block;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .footer .left-footer,
+  .footer .right-footer {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .footer .left-footer {
+    padding-inline-start: 0;
+    text-align: start;
+    display: block;
+  }
+  .footer .right-footer {
+    padding-inline-end: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header i {
+    font-size: 30px;
+  }
+
+  .header nav a {
+    font-size: 14px;
+  }
+
+  .footer .left-footer,
+  .footer .right-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .left-footer dt a {
+    font-size: 14px;
+  }
+}
