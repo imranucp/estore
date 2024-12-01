@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+div{
+    font-weight: bold;
+    font-style: italic;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.heading {
+    color: white;
+    /* font-family: monospace; */
+    text-decoration: dotted underline;
+}
