@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Mobile Store</title>
+  <link rel="stylesheet" href="../css/universal.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Mobile Store</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="products-page">
+    <h2 class="page-title">Our Products</h2>
+    <section class="products-container">
+      <!-- Products will be dynamically loaded here -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Mobile Store for devops assigment</p>
+  </footer>
+
+  <script>
+    // Sample product data
+    const products = [
+      { name: "iPhone 14 Pro", price: 1000000, image: "../images/iphone14pro.jpeg" },
+      { name: "Samsung Galaxy S23", price: 120000, image: "../images/galaxyS23.jpg" },
+      { name: "Google Pixel 8", price: 100000, image: "../images/pixel8.png" },
+      { name: "iPhone 14 Pro", price: 1000000, image: "../images/iphone14pro.jpeg" },
+      { name: "Samsung Galaxy S23", price: 120000, image: "../images/galaxyS23.jpg" },
+      { name: "Google Pixel 8", price: 100000, image: "../images/pixel8.png" },
+      { name: "iPhone 14 Pro", price: 1000000, image: "../images/iphone14pro.jpeg" },
+      { name: "Samsung Galaxy S23", price: 120000, image: "../images/galaxyS23.jpg" },
+      { name: "Google Pixel 8", price: 100000, image: "../images/pixel8.png" },
+      { name: "iPhone 14 Pro", price: 1000000, image: "../images/iphone14pro.jpeg" },
+      { name: "Samsung Galaxy S23", price: 120000, image: "../images/galaxyS23.jpg" },
+      { name: "Google Pixel 8", price: 100000, image: "../images/pixel8.png" },
+      { name: "iPhone 14 Pro", price: 1000000, image: "../images/iphone14pro.jpeg" },
+      { name: "Samsung Galaxy S23", price: 120000, image: "../images/galaxyS23.jpg" },
+      { name: "Google Pixel 8", price: 100000, image: "../images/pixel8.png" },
+      { name: "iPhone 14 Pro", price: 1000000, image: "../images/iphone14pro.jpeg" },
+      { name: "Samsung Galaxy S23", price: 120000, image: "../images/galaxyS23.jpg" },
+      { name: "Google Pixel 8", price: 1000000, image: "../images/pixel8.png" },
+      { name: "iPhone 14 Pro", price: 1000000, image: "../images/iphone14pro.jpeg" },
+      { name: "Samsung Galaxy S23", price: 120000, image: "../images/galaxyS23.jpg" },
+      { name: "Google Pixel 8", price: 100000, image: "../images/pixel8.png" }
+    ];
+
+    // Render products dynamically
+    const container = document.querySelector('.products-container');
+    container.innerHTML = products.map(product => `
+      <div class="product-card">
+        <img src="images/${product.image}" alt="${product.name}" class="product-image">
+        <div class="product-details">
+          <h3 class="product-title">${product.name}</h3>
+          <p class="product-price">${product.price.toFixed(2)} PKR</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    `).join('');
+  </script>
+</body>
+</html>
