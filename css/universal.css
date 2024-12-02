@@ -334,7 +334,9 @@ body {
     font-weight: normal;
     border-radius: 0px;
 }
-
+a.nav-item.nav-link {
+    color: black !important;
+}
 
 /*** Navbar ***/
 .navbar .dropdown-toggle::after {
