@@ -5,65 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="./css/universal.css">
+    <link rel="stylesheet" href="./css/contact-us.css">
 </head>
 <body>
-    <div class="contact-container">
-        <h1 style="text-align: center;"> Contact Us</h1>
-        <p style="text-align: center;">We'd love to hear from you! Please fill out the form below and we'll get in touch with you shortly.</p>
+    <div class="contact-page">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Please fill out the form below and we'll get in touch with you shortly.</p>
 
-        <form id="contactForm" class="contact-form">
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-            </div>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
 
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-            </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
 
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-            </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
 
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
 
-        <div id="responseMessage" class="response-message"></div>
+            <div id="responseMessage" class="response-message"></div>
+        </div>
     </div>
 
     <script>
-        // JavaScript to handle form submission and validation
         document.getElementById("contactForm").addEventListener("submit", function(event) {
             event.preventDefault();
 
-            // Get form inputs
             const name = document.getElementById("name").value;
             const email = document.getElementById("email").value;
             const message = document.getElementById("message").value;
 
-            // Simple form validation
             if (!name || !email || !message) {
                 showResponseMessage("Please fill in all fields.", "error");
                 return;
             }
 
-            // Assuming a successful form submission
             showResponseMessage("Thank you for reaching out! We will get back to you soon.", "success");
 
-            // Clear the form
             document.getElementById("contactForm").reset();
         });
 
-        // Function to display response message
         function showResponseMessage(message, type) {
             const responseElement = document.getElementById("responseMessage");
             responseElement.textContent = message;
             responseElement.className = `response-message ${type}`;
             responseElement.style.display = "block";
 
-            // Hide the message after 3 seconds
             setTimeout(() => {
                 responseElement.style.display = "none";
             }, 3000);

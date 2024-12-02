@@ -217,25 +217,11 @@ header .nav-links a:hover {
 }
 
 
-.footer {
-    background-color: #343a40;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
-}
 
 .footer p {
     font-size: 16px;
-}
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1e1e2f;
-    color: #fff;
-}
+} */
+
 
 .container {
     max-width: 1200px;
@@ -320,24 +306,7 @@ body {
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.6);
 }
 
-/* Footer Styles */
-.footer {
-    text-align: center;
-    padding: 15px;
-    background: #292a40;
-    margin-top: 20px;
-    border-top: 3px solid #6a11cb;
-    color: #fff;
-}
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1e1e2f;
-    color: #fff;
-    line-height: 1.6;
-}
+
 
 .container {
     max-width: 1200px;
@@ -501,15 +470,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Footer Styles */
-.footer {
-    text-align: center;
-    padding: 15px;
-    background: #292a40;
-    margin-top: 20px;
-    color: #fff;
-    border-top: 3px solid #6a11cb;
-}
 
 
 /*** Spinner ***/
@@ -924,12 +884,6 @@ a.nav-item.nav-link {
     padding-right: 0;
     border-right: none;
 }
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
 
 .promo-banner {
     background: url('../assets/promo-banner.jpg') no-repeat center center;
@@ -1000,12 +954,108 @@ header {
 .promo-cards{
     margin-bottom: 100px;
 }
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
+
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e7c7c, #2d3b3b);
+}
+
+.contact-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
     width: 100%;
-    bottom: 0;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Label Styling */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    display: block;
+    text-align: left;
+}
+
+/* Input and Textarea Fields */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+/* Focus Effect */
+input:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Button Styling */
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Response Message Styling */
+.response-message {
+    margin-top: 15px;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.response-message.success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.response-message.error {
+    background-color: #f44336;
+    color: white;
 }
