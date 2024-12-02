@@ -17,3 +17,94 @@ div{
     /* font-family: monospace; */
     text-decoration: dotted underline;
 }
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styling */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header .logo {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.header .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header .nav-links a:hover {
+    color: #f9f9f9;
+}
+
+/* Main Section Styling */
+.blog-post {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #444;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
